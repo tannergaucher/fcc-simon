@@ -1,0 +1,136 @@
+.kontainer {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.simon {
+  margin: 0 auto;
+  position: relative;
+  width: 38em;
+  height: 38em;
+}
+
+.button {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.button.red {
+  top: 0;
+  left: 0;
+  background-color: red;
+  border-radius: 100% 0 0 0;
+}
+
+.button.red:hover {
+  opacity: .5;
+  box-shadow: 5px 1px 30px 5px rgba(0, 0, 0, .1);
+}
+
+.button.blue {
+  top: 0;
+  right: 0;
+  background-color: blue;
+  border-radius: 0 100% 0 0;
+}
+
+.button.blue:hover {
+  opacity: .5;
+  box-shadow: 5px 1px 30px 5px rgba(0, 0, 0, .1);
+}
+
+.button.yellow {
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  border-radius: 0 0 0 100%;
+}
+
+.button.yellow:hover {
+  opacity: .5;
+  box-shadow: 5px 1px 30px 5px rgba(0, 0, 0, .1);
+}
+
+.button.green {
+  bottom: 0;
+  right: 0;
+  background-color: green;
+  border-radius: 0 0 100% 0;
+}
+
+.button.green:hover {
+  opacity: .5;
+  box-shadow: 5px 1px 30px 5px rgba(0, 0, 0, .1);
+}
+
+.center {
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border-radius: 50%;
+}
+
+.start {
+  position: absolute;
+  top: 30%;
+  left: 31%;
+}
+
+.red-light {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: red;
+  border: 5px solid darkgrey;
+}
+
+.strict {
+  position: absolute;
+  bottom: 35%;
+  left: 20%;
+}
+
+.strict-light {
+  position: absolute;
+  bottom: 30%;
+  left: 35%;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: yellow;
+  border: 5px solid darkgrey;
+}
+
+.count {
+  position: absolute;
+  bottom: 35%;
+  right: 30%;
+}
+
+/* @media(max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+} */
+
+/* @media(max-width: 768px) {
+  .simon {
+    width: 20em;
+    height: 20em;
+  }
+} */
+
+/* @media(max-width: 480px) {
+  .container {
+    width: 350px;
+  }
+} */
