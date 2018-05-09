@@ -95,8 +95,8 @@
 
 .strict {
   position: absolute;
-  bottom: 35%;
-  left: 20%;
+  bottom: 40%;
+  left: 30%;
 }
 
 .strict-light {
@@ -110,10 +110,102 @@
   border: 5px solid darkgrey;
 }
 
-.count {
+.counter {
   position: absolute;
-  bottom: 35%;
-  right: 30%;
+  top: 37%;
+  right: 31%;
+  display: flex;
+  height: 40px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  color: tomato;
+  font-size: 28px;
+  border-radius: 2px;
+  background: rgba(0, 0, 240, 200);
+}
+
+.on-off {
+  position: absolute;
+  bottom: 25%;
+  right: 29%;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  border-radius: 3px;
+  border: 2px solid darkgrey;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  display: none;
+}
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  margin-left: 4px;
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 0px;
+  bottom: 5px;
+  background-color: red;
+  border-radius: 1px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  /* opacity: .8; */
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.on {}
+
+.off {
+  background: darkgrey;
+  opacity: .3;
+}
+
+.credit {
+  text-align: right;
+}
+
+a {
+  color: black !important;
+  text-decoration: underline !important;
+}
+
+a:hover {
+  color: red !important;
+  opacity: .5 !important;
+}
+
+p {
+  margin-bottom: 0px !important;
 }
 
 /* @media(max-width: 992px) {

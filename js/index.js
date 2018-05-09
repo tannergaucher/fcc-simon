@@ -6,8 +6,11 @@ let sound1 = document.getElementById('sound1');
 let sound2 = document.getElementById('sound2');
 let sound3 = document.getElementById('sound3');
 let sound4 = document.getElementById('sound4');
+let onSwitch = document.getElementById('checkbox');
+let controls = document.getElementById('controls');
+let simonBody = document.getElementById('simon');
 
-let buttons = [1, 2, 3, 4];
+
 let colors = ['red', 'green', 'blue', 'yellow'];
 let count = 1;
 let que = [];
@@ -26,12 +29,28 @@ function player(button) {
     console.log("match");
     count++;
     simon();
+
   } else {
     console.log('nope. restart');
     count = 1;
     //restart()
   }
 }
+
+function switchOn() {
+  if (onSwitch.checked === true) {
+    controls.classList.add('on');
+    controls.classList.remove('off');
+
+  }
+  if (onSwitch.checked === false) {
+    controls.classList.add('off');
+    controls.classList.remove('on');
+  }
+}
+switchOn();
+
+onSwitch.addEventListener('click', switchOn);
 
 red.addEventListener('click', function() {
   sound1.play();
