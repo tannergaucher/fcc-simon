@@ -12,18 +12,22 @@
   <div class="kontainer">
     <h1>Simon</h1>
     <div class="simon">
-      <div id="red" class="button red"></div>
-      <div id="blue" class="button blue"></div>
-      <div id="yellow" class="button yellow"></div>
-      <div id="green" class="button green"></div>
+      <div id="red" class="button red buttons-off"></div>
+      <div id="blue" class="button blue buttons-off"></div>
+      <div id="yellow" class="button yellow buttons-off"></div>
+      <div id="green" class="button green buttons-off"></div>
       <div class="center">
         <div id="controls" class="on">
-          <p class="start">Start</p>
-          <div class="red-light"></div>
-          <p id="counter" class="counter">--</p>
-          <p class="strict">Strict</p>
-          <div class="strict-light"></div>
+          <div id="start" class="">
+            <p class="start">Start</p>
+            <div class="red-light"></div>
+          </div>
+          <div class="">
+            <p class="strict">Strict</p>
+            <div id="strict-light" class="strict-light"></div>
+          </div>
         </div>
+        <p id="counter" class="counter off">--</p>
         <div class="on-off">
           <label class="switch">
             <input id="checkbox" type="checkbox">
@@ -35,9 +39,7 @@
     <p class="credit">By <a href="#">Tanner</a></p>
   </div>
 
-  <audio id="sound1"><source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
-      Your browser does not support the audio tag.
-  </audio>
+  <audio id="sound1"><source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"></audio>
   <audio id="sound2"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"></audio>
   <audio id="sound3"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"></audio>
   <audio id="sound4"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"></audio>
